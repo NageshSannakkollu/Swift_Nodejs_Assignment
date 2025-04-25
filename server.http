@@ -1,0 +1,71 @@
+GET http://localhost:3027/load 
+
+
+### Get Specific User
+GET http://localhost:3027/users/2
+### Delete Specified User
+DELETE http://localhost:3027/users/8
+
+###  Delete All users //Note:Thinks once before click once you click won't get back
+DELETE http://localhost:3027/users
+
+### Update Specific User
+PUT http://localhost:3027/users/3
+Content-Type: application/json 
+
+{
+    "name":"Suresh Kumar",
+    "username":"suresh",
+    "email":"suresh@test.com",
+    "address":{
+        "street": "First street",
+        "suite": "Apt. 122",
+        "city": "New Delhi",
+        "zipcode": "92998-3874",
+        "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+        }
+    },
+    "phone": "9807654321",
+    "website": "nomoreghajini.org",
+    "company": {
+      "name": "CheckBeforeOut",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+}
+
+### Get All Posts
+GET http://localhost:3027/posts 
+
+### Get Specific Post
+GET http://localhost:3027/posts/34
+
+### Get All Comments
+GET http://localhost:3027/comments 
+
+
+### Get Specific Comment
+GET http://localhost:3027/comments/100
+
+### Update Specific Post
+PUT http://localhost:3027/posts/100
+Content-Type: application/json 
+
+{
+    "userId":9,
+    "title":"This is Title",
+    "body":"This is body"
+}
+
+### Update Specific Comment
+PUT http://localhost:3027/comments/100
+Content-Type: application/json 
+
+{
+    "postId":9,
+    "name":"This is Name",
+    "email":"sampletest1@test.com",
+    "body":"this is comment body"
+}
