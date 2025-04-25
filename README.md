@@ -1,4 +1,4 @@
-#Install Dependencies
+## INSTALL DEPENDENCIES
 
 1.Npm init -y for initiating Nodejs project
 
@@ -10,7 +10,7 @@
 
 5.Create .env file at root level for environment variables.
 
-## Connection with Database and Run the Program.
+### DATABASE CONNECTION-RUN THE PROGRAM
 
 6.Add port number,mongodb connection uri to the env file.
 
@@ -26,7 +26,7 @@
 
 12.For Checking make a file with name server.http for all http requests.
 
-### ALL REQUESTS AND END PATH
+#### ALL REQUESTS AND END PATH
 
 13. GET - /load for loading all users along with Posts and Comments.
 
